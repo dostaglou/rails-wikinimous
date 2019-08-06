@@ -1,0 +1,13 @@
+<div>
+  <h1 class="center">New Article</h1>
+  <%= form_for @article do |f| %>
+    <div class="form-group">
+      <%= f.label :title %>
+      <%= f.text_field :title, size: "39"%>
+      <%= f.label :content %>
+      <%= f.text_area :content, size: "40x10" %>
+    <%= f.submit class:"btn btn-primary" %>
+    <% end %>
+    </div>
+</div>
+
